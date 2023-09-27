@@ -4,7 +4,7 @@
 `pubspec.yaml`中添加
 ```yaml
 dependencies:
-  flutter_screen_adaptation: ^0.0.1
+  flutter_screen_adaptation: ^0.0.2
 ```
 ## 用法
 ```dart
