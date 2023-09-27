@@ -1,6 +1,12 @@
 # Flutter屏幕适配插件
 
-# 用法
+## 引用
+`pubspec.yaml`中添加
+```yaml
+dependencies:
+  flutter_screen_adaptation: ^0.0.1
+```
+## 用法
 ```dart
 import 'package:flutter/material.dart';
 
