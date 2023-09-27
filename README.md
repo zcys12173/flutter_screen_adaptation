@@ -1,15 +1,46 @@
-# flutter_screen_adaptation
+# Flutter屏幕适配插件
 
-A new Flutter project.
+# 用法
+```dart
+import 'package:flutter/material.dart';
 
-## Getting Started
+import 'package:flutter_screen_adaptation/flutter_screen_adaptation.dart';
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await ScreenAdaptation.init(800, 600);
+  runApp(const MyApp());
+}
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Plugin example app'),
+        ),
+        body: Center(
+          child: Container(width: 400.wdp, height:300.hdp,color: Colors.green,),
+        ),
+      ),
+    );
+  }
+}
+
+```
 
