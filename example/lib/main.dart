@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:flutter_screen_adaptation/flutter_screen_adaptation.dart';
 
 void main() async {
