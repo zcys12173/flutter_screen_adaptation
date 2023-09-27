@@ -1,3 +1,7 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* 支持宽&高适配
+
+## 0.0.2
+
+* 修改协议和pubspec.yaml配置
